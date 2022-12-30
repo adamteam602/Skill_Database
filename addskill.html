@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>Add a Skill</header>
+
+        <form action="/create_contact" method="POST">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required  name="name1">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Add a Skill</label>
+                            <select name="course" >
+                                <option value="fed">Choose a Skill</option>
+                            <option value="ad">C</option>
+                            <option value="ad">C++</option>
+                            <option value="bed">Java</option>
+                            <option value="dsa">Python</option>
+                            <option value="pb">JavaScript</option>
+                            <option value="fsd">Typescript</option>
+                            <option value="fsd">Management</option>
+                            <option value="fsd">Web Scrapping</option>
+                            <option value="fsd">HTML</option>
+                            <option value="fsd">CSS</option>
+                            </select>
+
+                        </div>
+
+                        <div class="input-field">
+                            <label>Domain</label>
+                            <select required>
+                                <option disabled selected>Domain</option>
+                                <option>Tech</option>
+                                <option>Business</option>
+                                <option>Leadership</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required name="mb">
+                        </div>
+                        <div class="input-field">
+                            <label>Skill Level</label>
+                            <select name="course" >
+                                <option value="fed">Choose a Level</option>
+                            <option value="ad">Begineer</option>
+                            <option value="ad">Intermediate</option>
+                            <option value="bed">Advance</option>
+                            </select>
+
+                        </div>
+                        <div class="input-field">
+                            <label>Year Of Experience</label>
+                            <input type="number" placeholder="Enter Year Of Experience" required name="mb">
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+
+                    <button class="nextBtn">
+                        <span class="btnText">SUBMIT</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
